@@ -1,14 +1,14 @@
-import './App.css'
-import { QueryExemple } from './components/query-exemple'
+import "./App.css";
+import { MutationExample } from "./components/mutation-example";
 
 function App() {
-
   return (
     <div>
       <h2>Tanstack Full App</h2>
-      <QueryExemple />
+      {/* <QueryExemple /> */}
+      <MutationExample />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
