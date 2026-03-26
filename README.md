@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# 🚀 TanStack Full
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> _Projeto desenvolvido para praticar e aprofundar conhecimentos em TanStack Query, explorando desde conceitos básicos até técnicas avançadas de gerenciamento de estado assíncrono em aplicações React._
 
-Currently, two official plugins are available:
+### 📚 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este repositório tem como objetivo consolidar o aprendizado de data fetching moderno, utilizando o TanStack Query para construir aplicações mais performáticas, escaláveis e organizadas.
 
-## React Compiler
+Durante o desenvolvimento, são abordados conceitos essenciais como:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fetching de dados
+- Cache automático e gerenciamento de estado
+- Sincronização com APIs
+- Mutations (criação/atualização de dados)
+- Paginação
+- Infinite Queries
+- Atualizações otimistas (Optimistic Updates)
+### 🧠 Objetivo
 
-## Expanding the ESLint configuration
+Aprender e dominar o TanStack Query do nível iniciante ao avançado, aplicando boas práticas utilizadas no mercado para construção de aplicações React modernas.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🛠️ Tecnologias Utilizadas
+React
+TanStack Query
+TypeScript (opcional)
+Vite / React.js
+Axios ou Fetch API
+📁 Estrutura do Projeto
+```
+src/
+├── api/           # Configuração de chamadas HTTP
+├── hooks/         # Hooks customizados com TanStack Query
+├── pages/         # Páginas da aplicação
+├── components/    # Componentes reutilizáveis
+└── utils/         # Funções auxiliares
+```
+### ⚙️ Funcionalidades Implementadas
+ - [x] Data Fetching básico
+ - [x] Cache automático
+ - [x] Refetching inteligente
+ - [x] Mutations (POST, PUT, DELETE)
+ - [x] Paginação
+ - [x] Infinite Scroll
+ - [x] Optimistic Updates
+ - [ ] Prefetching
+ - [x] Devtools do TanStack Query
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### ▶️ Como rodar o projeto
+Clone o repositório
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+```
+git clone https://github.com/emanoelantonio/tanstack-full.git
+``` 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Acesse a pasta
+```
+cd tanstack-full
+```
+Instale as dependências
+```
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Rode o projeto
 ```
+npm run dev
+```
+## 📖 Aprendizados
+
+Este projeto reforça conceitos importantes como:
+
+- Separação de responsabilidades
+- Gerenciamento eficiente de estado assíncrono
+- Redução de complexidade com abstrações
+- Melhor experiência do usuário com dados em tempo real
+
+## 🤝 Contribuição
+
+Este projeto é voltado para aprendizado, mas sugestões e melhorias são sempre bem-vindas!
